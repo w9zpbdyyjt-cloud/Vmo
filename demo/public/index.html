@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VEXORA Studio - النسخة التجريبية</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">VEXORA</div>
+        <nav>
+          <a class="nav-item active">الرئيسية</a>
+          <a class="nav-item">مشاريعي</a>
+          <a class="nav-item">المصمم</a>
+          <a class="nav-item">منطقة المالك</a>
+        </nav>
+        <div class="note">نسخة تجريبية محلية — مفاتيح 1-10 فقط</div>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar">
+          <div class="greeting">وش تبي تصمم اليوم؟</div>
+          <div class="auth">
+            <input id="demoKey" type="text" placeholder="حط رقم المفتاح التجريبي (1-10)" />
+            <button id="loginBtn" class="btn">دخول</button>
+          </div>
+        </header>
+
+        <section id="content" class="content">
+          <div id="welcome" class="card">
+            <h2>هلا والله</h2>
+            <p>جرب تفتح مصمم الأوامر بالمفتاح التجريبي. هذا النظام للعرض المحلي فقط.</p>
+          </div>
+
+          <div id="designer" class="card hidden">
+            <h3>مصمم الأوامر (معاينة)</h3>
+            <p class="muted">جرب تضيف أمر تجريبي سريع، وبعدين اضغط "نشر" لتشوف النتيجة (محلياً).</p>
+
+            <div class="field">
+              <label>اسم الأمر</label>
+              <input id="cmdName" placeholder="مثال: السلام" />
+            </div>
+
+            <div class="field">
+              <label>نص الرد</label>
+              <input id="cmdReply" placeholder="مثال: هلا والله" />
+            </div>
+
+            <div class="actions">
+              <button id="saveBtn" class="btn primary">حفظ</button>
+              <button id="publishBtn" class="btn">نشر (محلي)</button>
+            </div>
+
+            <div id="result" class="result"></div>
+          </div>
+
+          <div id="message" class="message"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

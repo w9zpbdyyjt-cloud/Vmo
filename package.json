@@ -1,4 +1,3 @@
-
 {
   "name": "vexora",
   "version": "1.0.0",
@@ -6,10 +5,12 @@
   "type": "module",
   "scripts": {
     "start": "node bot.js",
-    "register": "node register-commands.js"
+    "register": "node register-commands.js",
+    "demo": "node demo/server.js"
   },
   "dependencies": {
     "discord.js": "^14.21.0",
-    "dotenv": "^16.4.7"
+    "dotenv": "^16.4.7",
+    "express": "^4.18.2"
   }
 }
